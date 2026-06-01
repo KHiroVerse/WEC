@@ -1,0 +1,118 @@
+.all-news-page {
+  min-height: 100vh;
+  background-color: #fff;
+  padding-top: 100px;
+}
+
+.all-news-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.all-news-header h1 {
+  font-size: 3rem;
+  color: #B91212;
+  margin-bottom: 1rem;
+}
+
+.all-news-line {
+  width: 60px;
+  height: 4px;
+  background-color: #B91212;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.back-button {
+  background: none;
+  border: 2px solid #B91212;
+  color: #B91212;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #B91212;
+  color: #fff;
+}
+
+.all-news-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.all-news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.all-news-card {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.all-news-date {
+  font-size: 0.9rem;
+  color: #B91212;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.all-news-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.all-news-excerpt {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.all-news-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #B91212;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.all-news-button:hover {
+  background-color: #8e0e0e;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .all-news-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .all-news-grid {
+    grid-template-columns: 1fr;
+  }
+}

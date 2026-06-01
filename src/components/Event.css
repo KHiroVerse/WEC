@@ -1,0 +1,116 @@
+.event-section {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.event-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #B91212;
+}
+
+.event-line {
+  width: 60px;
+  height: 4px;
+  background-color: #B91212;
+  margin: 0 auto 3rem auto;
+  border-radius: 2px;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.event-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.event-date {
+  font-size: 0.9rem;
+  color: #B91212;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.event-location {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.event-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #B91212;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.event-button:hover {
+  background-color: #8e0e0e;
+  transform: scale(1.05);
+}
+
+.all-events-button {
+  margin-top: 3rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #B91212;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.all-events-button:hover {
+  background-color: #8e0e0e;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .join-us-button {
+    width: 100%;
+    max-width: none;
+  }
+}
