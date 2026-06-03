@@ -13,7 +13,7 @@ const Navbar = ({ scrolled, onNavigate }) => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-logo">
         <a href="/" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>
-          <img src={scrolled ? "/WECLOGO.png" : "/WECLOGO2.png"} alt="WECLOGO" className="navbar-logo-img" />
+          <img src={scrolled ? "/public/WECLOGO.png" : "/public/WECLOGO2.png"} alt="WECLOGO" className="navbar-logo-img" />
         </a>
       </div>
       <ul className="navbar-links">
