@@ -11,14 +11,14 @@ const Navbar = ({ scrolled, onNavigate }) => {
 
   return (
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
-      <div className="navbar-logo">
-        <a href="/" onClick={(e) => { e.preventDefault(); onNavigate('home'); }}>
-          <img src={scrolled ? "/public/WECLOGO.png" : "/public/WECLOGO2.png"} alt="WECLOGO" className="navbar-logo-img" />
-        </a>
-      </div>
-      <ul className="navbar-links">
-        <li><a href="#about" onClick={(e) => { e.preventDefault(); onNavigate('home', '#about'); }}>About</a></li>
-        <li><a href="#news" onClick={(e) => { e.preventDefault(); onNavigate('home', '#news'); }}>News</a></li>
+<div className="navbar-logo">
+  <a href="/" onClick={(e) => { e.preventDefault(); onNavigate('/'); }}>
+    <img src={scrolled ? "/public/WECLOGO.png" : "/public/WECLOGO2.png"} alt="WECLOGO" className="navbar-logo-img" />
+  </a>
+</div>
+<ul className="navbar-links">
+  <li><a href="#about" onClick={(e) => { e.preventDefault(); onNavigate('/', '#about'); }}>About</a></li>
+  <li><a href="#news" onClick={(e) => { e.preventDefault(); onNavigate('/', '#news'); }}>News</a></li>
         <li className="dropdown-container">
           <a href="#location" className="dropdown-trigger" onClick={toggleLocation}>
             Location <span className={`dropdown-arrow ${isLocationOpen ? 'open' : ''}`}>▼</span>
