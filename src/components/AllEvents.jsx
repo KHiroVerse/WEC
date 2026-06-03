@@ -1,5 +1,5 @@
 import React from 'react';
-import './AllEvents.css';
+// import './AllEvents.css';
 
 const AllEvents = ({ onBack }) => {
   const events = [
